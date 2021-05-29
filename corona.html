@@ -15,10 +15,12 @@
   <link rel="stylesheet" href="./css/corornastyle.css" />
 </head>
 <body onload="fetch()"> 
-    <div class="container-fluid">
+    <div class="container container1">
+        <marquee behavior = "alternate" class="mark" scrolldelay="10">-: LIVE COVID-19 Udates around the WORLD :-</marquee>
+      
         <div class="table-responsive">
-            <table class="table table-bordered table-striped text-center" id="tbval">
-                <tr>
+            <table class="table table-bordered table-striped text-center table-hover tabler" id="tbval">
+                <tr class="tablerow">
                     <th>Country</th>
                     <th>TotalConfirmed</th>
                     <th>TotalRecovered</th>
@@ -31,6 +33,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
@@ -39,14 +42,56 @@
     <script>
         function fetch(){
             $.get("https://api.covid19api.com/summary",
+            
                 function(data){
+                  $(this).css({"font-family": "Arial, Helvetica, sans-serif", "font-size": "200%"});
                     var tbval =document.getElementById('tbval');
                     for(var i=1;i<(data['Countries'].length);i++){
-                        var x=tbval.insertRow();
-                        x.insertcell(0);
-                        tbval.rows[i].cells[0].innerHTML=data['Countries'][i-1]['Country'];
-                        tbval.rows[i].cells[0].style.background='#7a4a91';
-                        tbval.rows[i].cells[0].style.color='#fff';
+                        if(i%2!=0){
+                          var x=tbval.insertRow();
+                          tbval.rows[i].style.fontSize='2rem';
+                          tbval.rows[i].style.background='#7a4a91';
+                          tbval.rows[i].style.color='#fff';
+                          x.insertCell(0);
+                          tbval.rows[i].cells[0].innerHTML=data['Countries'][i]['Country'];
+                          x.insertCell(1);
+                          tbval.rows[i].cells[1].innerHTML=data['Countries'][i]['TotalConfirmed'];
+                          x.insertCell(2);
+                          tbval.rows[i].cells[2].innerHTML=data['Countries'][i]['TotalRecovered'];
+                          tbval.rows[i].cells[2].style.background='green';
+                          x.insertCell(3);
+                          tbval.rows[i].cells[3].innerHTML=data['Countries'][i]['TotalDeaths'];
+                          x.insertCell(4);
+                          tbval.rows[i].cells[4].innerHTML=data['Countries'][i]['NewConfirmed'];
+                          x.insertCell(5);
+                          tbval.rows[i].cells[5].innerHTML=data['Countries'][i]['NewRecovered'];
+                          tbval.rows[i].cells[5].style.background='green';
+                          x.insertCell(6);
+                          tbval.rows[i].cells[6].innerHTML=data['Countries'][i]['NewDeaths'];
+                        }
+                        else{
+                          var x=tbval.insertRow();
+                          x.insertCell(0);
+                          tbval.rows[i].style.background='#4bb7d8';
+                          tbval.rows[i].style.fontSize='2rem';
+                          tbval.rows[i].cells[0].innerHTML=data['Countries'][i]['Country'];
+                          x.insertCell(1);
+                          tbval.rows[i].cells[1].innerHTML=data['Countries'][i]['TotalConfirmed'];
+                          x.insertCell(2);
+                          tbval.rows[i].cells[2].innerHTML=data['Countries'][i]['TotalRecovered'];
+                          tbval.rows[i].cells[2].style.background='#0bda51';
+                          tbval.rows[i].cells[2].style.color='#fff';
+                          x.insertCell(3);
+                          tbval.rows[i].cells[3].innerHTML=data['Countries'][i]['TotalDeaths'];
+                          x.insertCell(4);
+                          tbval.rows[i].cells[4].innerHTML=data['Countries'][i]['NewConfirmed'];
+                          x.insertCell(5);
+                          tbval.rows[i].cells[5].innerHTML=data['Countries'][i]['NewRecovered'];
+                          tbval.rows[i].cells[5].style.background='#0bda51';
+                          tbval.rows[i].cells[5].style.color='#fff';
+                          x.insertCell(6);
+                          tbval.rows[i].cells[6].innerHTML=data['Countries'][i]['NewDeaths'];
+                        }
                     }
                 }
             )

@@ -1,4 +1,44 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(199, 227, 240);
+}
+
+body {
+    background-color: rgb(185, 232, 250);
+    padding: 2rem;
+}
+
+.tablerow {
+    background-color: gainsboro;
+    font-size: 2rem;
+
+}
+
+.tabler {
+    width: 1300px;
+}
+
+.container1 {
+    align-self: center;
+}
+
+.mark {
+    width: 1100px;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(7, 166, 206);
+    align-self: center;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 480px) {
+    .mark {
+        width: 300px;
+        height: 4rem;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: rgb(7, 166, 206);
+        align-self: center;
+        overflow-x: hidden;
+    }
 }
