@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
   <link rel="stylesheet" href="./css/corornastyle.css" />
-  
+
 </head>
-<body onload="fetch()"> 
+<body onload="fetch()">
     <div class="jumbotron jumbotron-fluid jumbo1">
       <div class="row">
         <div class="col-8">
@@ -80,13 +80,79 @@
                 •	Slowly and steadily, things are improving; treatment is developed; vaccination is introduced;<br> and things are getting better.<br>
                 •	Health is Wealth: Taking care of yourself and your family, taking all the necessary precautions,<br> staying at home, living some more time in isolation, seem tough but would actually make the situations normal sometime soon. <br>
                 Just Bear with it, Don’t Quit!
-                
+
 </p>
             </div>
           </div>
       </div>
     </div>
-     
+
+
+
+
+
+
+  <!-- Footer -->
+    <footer class="add">
+      <div class="container-fluid py-5 foot">
+        <div class="row py-4">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><<img src="./assets/SoulSpace-Logo2.png" alt="logo" width="180" class="mb-3">
+            <p class="font-italic text-dark"><b><span class= "span"> SoulSpace </span><br>
+              “Even when it’s hard to see, we will still believe that the world is swash in beauty.”<br></b>
+    SoulSpace is our initiative to contribute our minimum to the society, and bring about a ray of hope. The situations are tough and longing, and so is the necessity to be strong, develop good health and immunity, and surround ourselves with some positivity.</p>
+            <ul class="list-inline mt-4">
+              <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-4"><span class= "span">Our Mission</span></h6>
+            <p class = "text-dark"><b>“We can’t help everyone, but everyone can help someone”</b><br>
+    Each individual worldwide, has been impacted by the pandemic, and indeed negativity surrounds us. Our mission is to create a positive shield of thoughts. This won’t solve the problems around us, but would definitely give strength to come out of it soon.<br>
+    Through SoulSpace, we wish to highlight a very sensitive topic of “mental health”, which is widely disrupted due to the ongoing Covid-19 pandemic situation.<br>
+    -	On a Mission, of being a better version
+
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-4"><span class= "span">Our Vision</span></h6>
+            <p class = "text-dark"><b>“Never loose hope. You never know what tomorrow may bring.”</b><br>
+              The worldwide problems need a platform to be discussed upon, and come up with some optimistic yet beneficial solutions. <br>
+              A strengths-based approach is not blind optimism or looking at the world through rose-coloured glasses. We don’t ignore problems, or pretend they don’t exist, but see them within a broader context.” <br>
+              - Holding the Vision, Trusting the process
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h6 class="text-uppercase font-weight-bold mb-4">Made with Love <3</h6>
+            <p class="text-dark mb-4">Helping one person might not change the world, but, it can change the world for one person! </p>
+            <div class="p-1 rounded border">
+              <div class="input-group">
+                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyrights -->
+      <div class="bg-dark py-4">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">Copyright @ 2021 | SoulSpace</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -97,7 +163,7 @@
     <script>
         function fetch(){
             $.get("https://api.covid19api.com/summary",
-            
+
                 function(data){
                   $(this).css({"font-family": "Arial, Helvetica, sans-serif", "font-size": "200%"});
                     var tbval =document.getElementById('tbval');

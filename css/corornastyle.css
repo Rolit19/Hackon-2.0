@@ -189,3 +189,42 @@ body {
 .cont1 {
     background-image: url("photos/bg1.jpg");
 }
+
+
+
+
+
+/* Footer CSS */
+.add {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    margin: 0;
+}
+
+.span {
+    color: #ffdb58;
+    font-size: 24px;
+}
+
+#button-addon1 {
+    color: #ffc371;
+}
+
+i {
+    color: #ffc371;
+}
+
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+    box-shadow: none;
+}
+
+.foot {
+    padding-left: 0;
+    padding-top: 50px;
+}
