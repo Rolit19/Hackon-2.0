@@ -17,15 +17,16 @@
 <body onload="fetch()"> 
     <div class="container container1">
         <marquee behavior = "alternate" class="mark" scrolldelay="10">-: LIVE COVID-19 Udates around the WORLD :-</marquee>
-      
-        <div class="table-responsive">
+        <center><button class="btn btn1" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Information</button></center>
+        <br>
+        <div class="table-responsive collapse multi-collapse" id="multiCollapseExample2">
             <table class="table table-bordered table-striped text-center table-hover tabler" id="tbval">
                 <tr class="tablerow">
                     <th>Country</th>
                     <th>TotalConfirmed</th>
                     <th>TotalRecovered</th>
                     <th>TotalDeaths</th>
-                    <th>TotalDeaths</th>
+                    <th>NewConfirmed</th>
                     <th>NewRecovered</th>
                     <th>NewDeaths</th>
                 </tr>
@@ -50,7 +51,7 @@
                         if(i%2!=0){
                           var x=tbval.insertRow();
                           tbval.rows[i].style.fontSize='2rem';
-                          tbval.rows[i].style.background='#7a4a91';
+                          tbval.rows[i].style.background='#000044';
                           tbval.rows[i].style.color='#fff';
                           x.insertCell(0);
                           tbval.rows[i].cells[0].innerHTML=data['Countries'][i]['Country'];
@@ -58,16 +59,18 @@
                           tbval.rows[i].cells[1].innerHTML=data['Countries'][i]['TotalConfirmed'];
                           x.insertCell(2);
                           tbval.rows[i].cells[2].innerHTML=data['Countries'][i]['TotalRecovered'];
-                          tbval.rows[i].cells[2].style.background='green';
+                          tbval.rows[i].cells[2].style.background='#05472a';
                           x.insertCell(3);
                           tbval.rows[i].cells[3].innerHTML=data['Countries'][i]['TotalDeaths'];
+                          tbval.rows[i].cells[3].style.background='#770001';
                           x.insertCell(4);
                           tbval.rows[i].cells[4].innerHTML=data['Countries'][i]['NewConfirmed'];
                           x.insertCell(5);
                           tbval.rows[i].cells[5].innerHTML=data['Countries'][i]['NewRecovered'];
-                          tbval.rows[i].cells[5].style.background='green';
+                          tbval.rows[i].cells[5].style.background='#05472a';
                           x.insertCell(6);
                           tbval.rows[i].cells[6].innerHTML=data['Countries'][i]['NewDeaths'];
+                          tbval.rows[i].cells[6].style.background='#770001';
                         }
                         else{
                           var x=tbval.insertRow();
@@ -83,6 +86,7 @@
                           tbval.rows[i].cells[2].style.color='#fff';
                           x.insertCell(3);
                           tbval.rows[i].cells[3].innerHTML=data['Countries'][i]['TotalDeaths'];
+                          tbval.rows[i].cells[3].style.background='#ff4040';
                           x.insertCell(4);
                           tbval.rows[i].cells[4].innerHTML=data['Countries'][i]['NewConfirmed'];
                           x.insertCell(5);
@@ -91,6 +95,7 @@
                           tbval.rows[i].cells[5].style.color='#fff';
                           x.insertCell(6);
                           tbval.rows[i].cells[6].innerHTML=data['Countries'][i]['NewDeaths'];
+                          tbval.rows[i].cells[6].style.background='#ff4040';
                         }
                     }
                 }
