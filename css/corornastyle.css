@@ -30,6 +30,7 @@ body {
     font-weight: bold;
     background-color: rgb(0, 58, 218);
     align-self: center;
+    color: white;
     overflow-x: hidden;
 }
 
@@ -42,6 +43,7 @@ body {
         background-color: rgb(0, 58, 218);
         align-self: center;
         overflow-x: hidden;
+        color: white;
     }
 }
 
@@ -52,4 +54,10 @@ body {
     background-color: blue;
     color: white;
     font-weight: bold;
+}
+
+.jumbo1 {
+    padding: 2rem;
+    height: 540px;
+    border-radius: 2%;
 }
