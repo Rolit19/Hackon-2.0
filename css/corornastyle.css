@@ -28,7 +28,7 @@ body {
     height: 4rem;
     font-size: 2rem;
     font-weight: bold;
-    background-color: rgb(7, 166, 206);
+    background-color: rgb(0, 58, 218);
     align-self: center;
     overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ body {
         height: 4rem;
         font-size: 2rem;
         font-weight: bold;
-        background-color: rgb(7, 166, 206);
+        background-color: rgb(0, 58, 218);
         align-self: center;
         overflow-x: hidden;
     }
