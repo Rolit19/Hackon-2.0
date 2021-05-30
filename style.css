@@ -48,6 +48,24 @@ body {
 
 /* MAIN PAGE SECTION */
 
+.Quote_Container {
+    height: 500px;
+}
+
+@media(max-width: 764px)
+{
+    .Quote_Container {
+        height: 350px;
+    }
+}
+
+@media(max-width: 576px)
+{
+    .Quote {
+        font-size: 20px !important;
+    }
+}
+
 .TopImg {
     background-image: url('./assets//MentalHealth.jpeg');
     background-color: white;
@@ -57,9 +75,17 @@ body {
     height: 550px;
 }
 
+@media(max-width: 370px)
+{
+    .TopImg {
+        height: 450px;
+    }
+}
+
 .Quote {
     font-size: 28px;
     width: 500px;
+    max-width: 90%;
 }
 
 .Carousel i {
@@ -78,10 +104,29 @@ body {
 
 .CustomCard {
     background-color: rgba(240, 252, 255, 0.63) !important;
-    height: 340px;
+    /* height: 340px; */
 }
 
 .CustomCard .card-header{
     font-size: 16px;
     background-color: inherit;
 }
+
+.Carousel_Pointer {
+    font-size: 60px;
+}
+
+@media(max-width: 600px)
+{
+    .Carousel_Pointer {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 460px)
+{
+    .Carousel_Pointer {
+        font-size: 25px;
+    }
+}
+
