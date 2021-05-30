@@ -6,17 +6,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Corona</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous" />
+    crossorigin="anonymous" /> 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
+    crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./css/corornastyle.css" />
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    /> -->
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
 </head>
-<body onload="fetch()"> 
+<body onload="fetch()">
+  <section class="Header">
+  <nav class="Header_Navbar navbar px-3 py-1 navbar-expand-lg navbar-light">
+    <div class="d-flex container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/SoulSpace-Logo2.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Support
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li><a class="dropdown-item" href="#">Mental Health</a></li>
+              <li><a class="dropdown-item" href="./corona.html">Covid Care</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+    <div class="jumbotron jumbotron-fluid jumbo1">
+      <div class="row">
+        <div class="col-8">
+          <img src="./img/covid.jpeg" height="500px" width="960px"/>
+        </div>
+        <div class="col-4">
+          <p>
+            <b>Covid-19:</b><br>
+            We are facing a global health crisis unlike any in the <br>75-year history of the United Nations — <br>one that is killing people, spreading human suffering, and upending people’s lives. But this is much more than a health crisis. <br>It is a human, economic and social crisis. The coronavirus disease (COVID-19), <br>which has been characterized as a pandemic by the World Health Organization <br>(WHO), is attacking societies at their core.
+            “I wear my mask to protect YOU.
+            You wear your mask to protect ME”
+
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="container container1">
-        <marquee behavior = "alternate" class="mark" scrolldelay="10">-: LIVE COVID-19 Udates around the WORLD :-</marquee>
+        <marquee behavior = "alternate" class="mark" scrolldelay="10" scrollamount="15">-: LIVE COVID-19 Udates around the WORLD :-</marquee>
         <center><button class="btn btn1" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Information</button></center>
         <br>
         <div class="table-responsive collapse multi-collapse" id="multiCollapseExample2">
@@ -33,6 +111,109 @@
             </table>
         </div>
     </div>
+    <div class="row row1">
+      <div class="wrapper col-4">
+          <div class="card front-face">
+            <img src="./assets/Covid_1.png">
+          </div>
+          <div class="card back-face">
+            <div class="info">
+              <div class="title">Impact:</div>
+              <p class="title1">
+                The COVID-19 outbreak affects all segments of the population and is particularly detrimental to members of those social groups in the most vulnerable situations, continues to affect populations, including people living in poverty situations, older persons, persons with disabilities, youth, and indigenous peoples.
+                Older persons are particularly susceptible to the risk of infection from COVID-19, especially those with chronic health conditions such as hypertension, cardiovascular disease and diabetes.
+                Many governments have called on youth to embrace the effort to protect themselves and the overall population. Youth are also in a position to help those who are most vulnerable, and to aid in increasing public health social awareness campaigns among their communities. Thus, youth are critical to limiting the virus’s spread and its impact on public health, society, and the economy at large.
+                “Something good comes out of even the worst situations. If you don’t see it, create it!”
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper col-4">
+          <div class="card front-face">
+            <img src="./assets/Covid_2.png">
+          </div>
+          <div class="card back-face">
+            <div class="info">
+              <div class="title">Happy facts about Covid-19:</div>
+              <p class="title1"><b>“Once you choose hope, anything is possible!”</b><br>
+                •	Situations might never be perfectly perfect again, but they will soon resort to being normal,<br> and the day is not far, when Covid-19 would just be a past.<br>
+                •	Each step of precaution, each contribution to humanity, would add to combating of this deadly<br>virus and situation.<br>
+                •	Slowly and steadily, things are improving; treatment is developed; vaccination is introduced;<br> and things are getting better.<br>
+                •	Health is Wealth: Taking care of yourself and your family, taking all the necessary precautions,<br> staying at home, living some more time in isolation, seem tough but would actually make the situations normal sometime soon. <br>
+                Just Bear with it, Don’t Quit!
+
+</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  <!-- Footer -->
+    <footer class="add">
+      <div class="container-fluid py-5 foot">
+        <div class="row py-4">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><<img src="./assets/SoulSpace-Logo2.png" alt="logo" width="180" class="mb-3">
+            <p class="font-italic text-dark"><b><span class= "span"> SoulSpace </span><br>
+              “Even when it’s hard to see, we will still believe that the world is swash in beauty.”<br></b>
+    SoulSpace is our initiative to contribute our minimum to the society, and bring about a ray of hope. The situations are tough and longing, and so is the necessity to be strong, develop good health and immunity, and surround ourselves with some positivity.</p>
+            <ul class="list-inline mt-4">
+              <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-4"><span class= "span">Our Mission</span></h6>
+            <p class = "text-dark"><b>“We can’t help everyone, but everyone can help someone”</b><br>
+    Each individual worldwide, has been impacted by the pandemic, and indeed negativity surrounds us. Our mission is to create a positive shield of thoughts. This won’t solve the problems around us, but would definitely give strength to come out of it soon.<br>
+    Through SoulSpace, we wish to highlight a very sensitive topic of “mental health”, which is widely disrupted due to the ongoing Covid-19 pandemic situation.<br>
+    -	On a Mission, of being a better version
+
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-4"><span class= "span">Our Vision</span></h6>
+            <p class = "text-dark"><b>“Never loose hope. You never know what tomorrow may bring.”</b><br>
+              The worldwide problems need a platform to be discussed upon, and come up with some optimistic yet beneficial solutions. <br>
+              A strengths-based approach is not blind optimism or looking at the world through rose-coloured glasses. We don’t ignore problems, or pretend they don’t exist, but see them within a broader context.” <br>
+              - Holding the Vision, Trusting the process
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h6 class="text-uppercase font-weight-bold mb-4">Made with Love <3</h6>
+            <p class="text-dark mb-4">Helping one person might not change the world, but, it can change the world for one person! </p>
+            <div class="p-1 rounded border">
+              <div class="input-group">
+                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyrights -->
+      <div class="bg-dark py-4">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">Copyright @ 2021 | SoulSpace</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -43,7 +224,7 @@
     <script>
         function fetch(){
             $.get("https://api.covid19api.com/summary",
-            
+
                 function(data){
                   $(this).css({"font-family": "Arial, Helvetica, sans-serif", "font-size": "200%"});
                     var tbval =document.getElementById('tbval');
@@ -103,5 +284,4 @@
         }
     </script>
   </body>
-  
   </html>

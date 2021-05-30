@@ -3,13 +3,16 @@
 body {
     background-color: black;
     font-family: 'IBM Plex Sans', sans-serif !important;
+    padding: 0;
 }
 
 .Header_Navbar {
     /* CURRENT */
-    background: #00d2ff;  
-    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #05d2fa, #44a8d7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #05d2fa, #44a8d7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* box-shadow: 0 2px 8px #ccc; */
 }
 
@@ -34,8 +37,7 @@ body {
     font-size: 18px;
 }
 
-@media(min-width: 992px)
-{
+@media(min-width: 992px) {
     .Header_Navbar img {
         margin-right: 10px;
         margin-left: 150px;
@@ -49,7 +51,7 @@ body {
 /* MAIN PAGE SECTION */
 
 .Quote_Container {
-    height: 500px;
+    height: 550px;
 }
 
 @media(max-width: 764px)
@@ -107,7 +109,7 @@ body {
     /* height: 340px; */
 }
 
-.CustomCard .card-header{
+.CustomCard .card-header {
     font-size: 16px;
     background-color: inherit;
 }
@@ -130,3 +132,174 @@ body {
     }
 }
 
+
+
+/* Footer CSS */
+.add {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    margin: 0;
+}
+
+.span {
+    color: #ffdb58;
+    font-size: 24px;
+}
+
+#button-addon1 {
+    color: #ffc371;
+}
+
+i {
+    color: #ffc371;
+}
+
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+    box-shadow: none;
+}
+
+.foot {
+    padding-left: 0;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+/* Cards CSS */
+::selection {
+    color: #fff;
+    background: #1cc7d0;
+}
+
+.wrapper {
+    height: 450px;
+    width: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    animation: float 6s ease-in-out infinite;
+    padding-bottom: 70px;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: perspective(1000px) translatey(0px) translateZ(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: perspective(1000px) translatey(-10px) translateZ(-50px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: perspective(1000px) translatey(0px) translateZ(0px);
+    }
+}
+
+.wrapper .card {
+    position: absolute;
+    height: 450px;
+    width: 400px;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    padding: 1 rem;
+
+
+}
+
+.wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+.wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+    position: absolute;
+}
+
+.wrapper .back-face img {
+    height: 4000px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+    background-color: white;
+}
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.back-face .info .title1 {
+    font-size: 15px;
+    font-weight: 300;
+    background-color: white;
+}
+
+.back-face ul {
+    display: flex;
+}
+
+.back-face ul a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 38px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    transition: all 0.5s ease;
+}
+
+.back-face ul a:hover {
+    color: #1cc7d0;
+    border-color: #1cc7d0;
+    background: linear-gradient(375deg, transparent, transparent);
+}
+
+.cont1 {
+    background-image: url("photos/bg1.jpg");
+}
