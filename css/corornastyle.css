@@ -4,7 +4,7 @@
 
 body {
     background: url("../img/back.jpeg");
-    background-size: cover;
+    background-size: contain;
     background-color: rgb(185, 232, 250);
     /* padding: 2rem; */
 }
@@ -69,15 +69,16 @@ body {
 }
 
 .wrapper {
-    height: 550px;
+    height: 600px;
     width: 600px;
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
     animation: float 6s ease-in-out infinite;
     padding-bottom: 70px;
-    margin: 6rem;
-
+    margin: 4rem;
+    padding: 1.5rem;
+    border-radius: 10%;
 }
 
 @keyframes float {
@@ -103,7 +104,7 @@ body {
     width: 600px;
     padding: 5px;
     background: white;
-    border-radius: 10px;
+    border-radius: 10%;
     transform: translateY(0deg);
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -124,8 +125,8 @@ body {
 .wrapper .card img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    object-fit: contain;
+    border-radius: 10%;
 }
 
 .wrapper .back-face {
@@ -143,7 +144,7 @@ body {
 }
 
 .wrapper .back-face img {
-    height: 4000px;
+    height: 400px;
     width: 300px;
     padding: 5px;
     border-radius: 50%;
